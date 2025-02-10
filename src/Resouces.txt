@@ -1,0 +1,2 @@
+<span> = An inline container used to apply styles or manipulate a small portion of text or elements.
+<div> = A block-level container that groups elements together. Takes up the full width of its parent container.
