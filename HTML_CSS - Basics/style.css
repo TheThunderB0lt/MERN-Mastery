@@ -1,0 +1,17 @@
+.shadow {
+    text-shadow: 5px 5px 5px rgb(233, 176, 176), -5px -5px 5px rgb(132, 222, 245);  /* X-axis & Y-axis & blur */
+    font-size: 35px;
+}
+
+#box-shadow1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(240, 245, 193);
+    box-shadow: 5px 5px 5px;
+}
+#box-shadow2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(240, 245, 193);
+    box-shadow: -5px -5px 5px;
+}
