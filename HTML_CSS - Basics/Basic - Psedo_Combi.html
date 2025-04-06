@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1 style="text-align: center;">COMBINATORS</h1>
+        <p>COMBINATORS - explains the relationship between listed selectors
+            <li>'Space'= descendent</li>
+            <li>'>' Child</li>
+            <li>'~' general Sibling</li>
+            <li>'+' adjacent sibling</li>
+        </p>
+
+        <div id="container">
+            <!-- Descendents -->
+            <p>This is #1</p>
+            <p>This is #2</p>
+            <div>
+                <!-- Child -->
+                <p>This is #3</p>
+                <p>This is #4</p>
+            </div>
+        </div>
+        <!-- General Sibling -> Nephews -->
+        <p>This is #5</p>
+        <p>This is #6</p>
+
+        <hr>
+        <!-- PSEUDO-CLASSES -->
+        <h1 style="text-align: center;">PSEUDO-CLASSES</h1>
+        <button class="btn">Click Here</button>
+        <div id="pse">
+            <ul>
+                <li>This is #1</li>
+                <li>This is #2</li>
+                <li>This is #3</li>
+                <li>This is #4</li>
+                <li>This is #5</li>
+            </ul>
+        </div>
+        <div id="greet">Hover Here
+            <p>Hello World</p>
+        </div>
+        <hr>
+        <br>
+
+        <!-- PSEUDO-ELEMENTS -->
+        <h1 style="text-align: center;">PSEUDO-ELEMENTS</h1>
+        <h3 class="txt">Hello</h3>
+        <p class="lor">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus aspernatur iste molestias sapiente quas autem 
+            totam ad maiores, ab soluta explicabo earum eligendi voluptate obcaecati et tempore nulla sit iusto?</p>
+            <ul class="fruit">
+                <li class="apple">Apple</li>
+                <li class="orange">Orange</li>
+                <li class="banana">Banana</li>
+            </ul>
+    </body>
+</html>

@@ -1,0 +1,189 @@
+/* NAVIGATION BAR */
+.bar {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: rgb(34, 34, 34);
+}
+.navbar li {
+    float: left;
+}
+
+
+/* FLEXBOX */
+
+.container {
+    border: 2px solid black;
+    height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    font-size: 5em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box1 {
+    background-color: rgb(252, 138, 138);
+}
+
+#box2 {
+    background-color: rgb(227, 252, 138);
+}
+
+#box3 {
+    background-color: rgb(138, 252, 218);
+}
+
+#box4 {
+    background-color: rgb(138, 146, 252);
+}
+
+
+/* TRANSOFORM */
+.tran {
+    margin: 0;
+}
+
+.tbox {
+    width: 150px;
+    height: 150px;
+    border: 2px solid;
+    font-size: 8em;
+    text-align: center;
+    transform: translateX(100px) rotateZ(45deg) scale(0.8);
+}
+
+#tran-box1 {
+    background-color: rgb(241, 52, 52);
+}
+
+#tran-box2 {
+    background-color: rgb(84, 241, 52);
+}
+
+#tran-box3 {
+    background-color: rgb(52, 241, 225);
+}
+
+
+/* ANIMATION */
+.ani1 {
+    width: 100px;
+    height: 100px;
+    font-size: 4em;
+    text-align: center;
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    margin: 10px;
+}
+.ani2 {
+    width: 100px;
+    height: 100px;
+    font-size: 4em;
+    text-align: center;
+    animation-name: slideRight;
+    animation-duration: 1s;
+    margin: 10px;
+}
+.ani3 {
+    width: 100px;
+    height: 100px;
+    font-size: 4em;
+    text-align: center;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    margin: 10px;
+}
+.ani4 {
+    width: 100px;
+    height: 100px;
+    font-size: 4em;
+    text-align: center;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    margin: 10px;
+}
+.ani5 {
+    width: 100px;
+    height: 100px;
+    font-size: 4em;
+    text-align: center;
+    animation-name: rotate;
+    animation-duration: 1s;
+    margin: 10px;
+}
+
+#ani1 {
+    background-color: rgb(96, 245, 195);
+}
+#ani2 {
+    background-color: rgb(245, 185, 96);
+}
+#ani3 {
+    background-color: rgb(141, 96, 245);
+}
+#ani4 {
+    background-color: rgb(245, 96, 200);
+}
+#ani5 {
+    background-color: rgb(96, 245, 108);
+}
+
+@keyframes slideLeft {
+    from{
+        transform: translateX(300%);
+    }
+}
+
+@keyframes slideRight {
+    to{
+        transform: translateX(300%);
+    }
+}
+
+@keyframes slideUp {
+    from{
+        transform: translateY(300%);
+    }
+}
+@keyframes slideDown {
+    to{
+        transform: translateY(300%);
+    }
+}
+@keyframes rotate {
+    50%{
+        transform: rotateZ(360deg);
+    }
+}
